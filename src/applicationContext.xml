@@ -14,12 +14,14 @@
 ">
 
     <bean id="tipCalculator1" class="lab2.FoodServiceTipCalculator" scope="prototype">
-        <constructor-arg name="q" value="TipService.ServiceQuality.GOOD"/>
+        <!--<constructor-arg name="q" value="TipService.ServiceQuality.GOOD"/>-->
+        <constructor-arg name="q" value="GOOD"/>
         <constructor-arg name="billAmt" value="125.00"/>
     </bean>
 
     <bean id="tipCalculator2" class="lab2.BaggageServiceTipCalculator" scope="prototype">
-        <constructor-arg name="q" value="TipService.ServiceQuality.FAIR"/>   
+        <!--<constructor-arg name="q" value="TipService.ServiceQuality.FAIR"/>-->   
+        <constructor-arg name="q" value="FAIR"/>
         <constructor-arg name="bags" value="5"/>
     </bean>
 
