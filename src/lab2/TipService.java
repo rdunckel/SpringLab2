@@ -1,11 +1,8 @@
 package lab2;
 
 public class TipService {
-    private TipCalculator tipCalculator;
 
-    public static enum ServiceQuality {
-       GOOD, FAIR, POOR
-    }
+    private TipCalculator tipCalculator;
 
     public TipService(TipCalculator tipCalculator) {
         this.tipCalculator = tipCalculator;
@@ -17,7 +14,7 @@ public class TipService {
 
     public void setTipCalculator(TipCalculator tipCalculator) {
         this.tipCalculator = tipCalculator;
-    }    
+    }
 
     public double getTip() {
         return tipCalculator.getTip();
